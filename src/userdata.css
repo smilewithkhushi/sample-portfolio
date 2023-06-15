@@ -23,7 +23,8 @@
 
 .education-container:hover,
 .volunteer-container:hover,
-.project-container:hover{
+.project-container:hover,
+.experience-container:hover{
     transition: 0.5s;
     background-color: rgba(20, 24, 87, 0.619);
     border: 2px solid rgba(255, 255, 255, 0.509);
@@ -50,9 +51,8 @@
 .volunteer-content {
     padding: 10px;
     margin: 10px;
-    width: 90vw;
+    width: 95vw;
     display: flex;
-
    flex-direction: row;
    flex-wrap: wrap;
     justify-content: center;
@@ -64,6 +64,22 @@
     padding: 10px;
     margin: 20px;
     width: 400px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    box-sizing: border-box;
+}
+
+.experience-container {
+    padding: 10px;
+    margin: 20px;
+    width: 350px;
     height: max-content;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);

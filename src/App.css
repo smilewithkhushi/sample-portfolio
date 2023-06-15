@@ -16,23 +16,26 @@
 
 .app-navbar{
     overflow: hidden;
+    position:fixed;
+    width: 100%;
     background-color: rgba(13, 0, 70, 0.852);
-    padding-right: 20px;
+    padding-right: 30px;
     margin-bottom: 20px;
 }
 .app-navbar a{
     color: white;
     float: right;
-    padding: 14px 16px;
+    padding: 16px 20px;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: monospace;
 }
 
 .app-navbar a:hover{
-    background-color: #5a009a;
-    color: black;
+    background-color: rgba(2, 0, 14, 0.852);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
 }
 
 .app-header {
@@ -95,7 +98,6 @@
 .clouds {
     width: 180px;
     position: absolute;
-    top: 60%;
     left: 5%;
     padding: 5px;
     overflow: hidden;
@@ -119,7 +121,6 @@
 .clouds-2 {
     width: 180px;
     position: absolute;
-    top: 60%;
     right: 3%;
     padding: 5px;
     margin: 5px;
@@ -131,8 +132,9 @@
 .sphere {
     width: 180px;
     position: absolute;
-    top: 160vh;
-    left: 2%;
+    float: bottom;
+    top: 170%;
+    left: 5%;
     padding: 5px;
     overflow: hidden;
     margin: 5px;
@@ -143,7 +145,6 @@
 .sphere-2 {
     width: 180px;
     position: absolute;
-    top: 110vh;
     right: 3%;
     padding: 5px;
     margin: 5px;
@@ -151,6 +152,7 @@
     transform: translatey(0px);
     animation: float 7s ease-in-out infinite;
 }
+
 @keyframes float {
     0% {
         box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0);
@@ -225,9 +227,8 @@
 }
 
 .astro-4 {
-    width: 180px;
+    width: 190px;
     position: absolute;
-    top: 170vh;
     right: 20%;
     padding: 5px;
     overflow: hidden;
@@ -239,16 +240,52 @@
 .astro-3 {
     width: 180px;
     position: absolute;
-    top: 310vh;
     left: 20%;
     padding: 5px;
-    overflow: hidden;
     margin: 5px;
     transform: translatey(0px);
     animation: float 10s ease-in-out infinite;
 }
 
+.astro-2 {
+    width: 200px;
+    position: absolute;
+    right: 20%;
+    transform: translatey(0px);
+    animation: float 10s ease-in-out infinite;
+}
+
+.spring{
+    width: 170px;
+    position: absolute;
+    left: 5%;
+    margin: 10px;
+    transform: translatey(0px);
+    animation: float 7s ease-in-out infinite;
+}
+
+.diamond{
+    width: 160px;
+    position: absolute;
+    right: 25px;
+    margin: 10px;
+    transform: translatey(0px);
+    animation: float 7s ease-in-out infinite;
+}
+
+
 @media screen and (max-width: 1000px) {
+.app-navbar a{
+    
+    color: white;
+    float: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: monospace;
+}
+
     .pfp {
         width: 200px;
         top: 10%;
@@ -307,12 +344,12 @@
     }
     .astro-4{
         width: 130px;
-        right: 0px;
+        right: 5px;
         top: 195vh;
     }
     .astro-3{
-        width: 130px;
-        right: 0px;
-        top: 350vh;
+        width: 150px;
+        left: 40px;
+        top: 360vh;
     }
 }

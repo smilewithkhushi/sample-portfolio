@@ -63,7 +63,7 @@ function App() {
         description={item.description}
         tech={item.tech}
         github={item.github}
-        />
+      />
     )
   })
 
@@ -73,15 +73,15 @@ function App() {
         <source src="media/dynamicbg.mp4" type="video/mp4" />
       </video>
 
-    
+
       <div className='app-navbar'>
-        
-      <a href="#contact">Contact</a>
-      <a href="#projects">Projects</a>
-      <a href="#volunteer">Volunteering</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#volunteer">Volunteering</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#about">About</a>
       </div>
 
       <header className="app-header">
@@ -104,7 +104,7 @@ function App() {
                 'A Content Creator',
                 'A Full Stack Developer',
               ]}
-             
+
             />
 
           </h2>
@@ -116,10 +116,10 @@ function App() {
       </header>
 
       <section className="about" id="about">
+        <img src="media/clouds.png" className="clouds" />
+        <img src="media/clouds-2.png" className="clouds-2" />
+        <img src="media/astro1.png" className="astro1" />
         <center>
-          <img src="media/clouds.png" className="clouds" />
-          <img src="media/clouds-2.png" className="clouds-2" />
-          <img src="media/astro1.png" className="astro1" />
 
           <h2 className='section-heading'>About Me</h2>
           <div className="about-text">
@@ -129,7 +129,7 @@ function App() {
             I'm skilled with Front End Website & App Development, Data science '(intermediate)' & Cloud Platforms such as GCP, Azure and AWS.
             <br></br>
             I'm a Full Stack Learner, Mentor, Community Builder and a YouTuber. I'm also an Alpha Microsoft Learn Student Ambassador. Being in community, I've organized various events and hackathons. I always look forward to utilize my skills and gain new learning experiences.
-           
+
           </div>
 
         </center>
@@ -147,8 +147,8 @@ function App() {
       </section>
 
       <section className="experience" id="experience">
-      <img src="media/astro4.png" className="astro-4" />
-       
+        <img src="media/astro4.png" className="astro-4" />
+
         <center>
           <h2 className='section-heading'>Experience</h2>
           <div className="experience-content">
@@ -158,7 +158,7 @@ function App() {
       </section>
 
       <section className="volunteering" id="volunteer">
-      <img src="media/astro3.png" className="astro-3" />
+        <img src="media/astro3.png" className="astro-3" />
 
         <center>
           <h2 className='section-heading'>Volunteering</h2>
@@ -169,19 +169,26 @@ function App() {
       </section>
 
       <section className="experience" id="projects">
+        <img src="media/astro2.png" className="astro-2" />
+        <img src="media/diamond.png" className="spring" />
+
         <center>
           <h2 className='section-heading'>Projects</h2>
           <div className="project-content">
-              {project}
+            {project}
           </div>
         </center>
+
+        <img src="media/spring.png" className="spring" />
+        
+        <img src="media/diamond.png" className="diamond" />
       </section>
 
       <section className="contact" id="contact">
         <center>
           <h2 className='section-heading'>Contact Me</h2>
           <div className="volunteer-content">
-            
+
           </div>
         </center>
       </section>
