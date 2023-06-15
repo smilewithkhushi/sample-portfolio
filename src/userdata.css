@@ -1,13 +1,137 @@
-.education-container{
+@font-face {
+    font-family: "poppins";
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+  }
+
+  h1,h2,h3,h4,h5{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.education-container {
     padding: 10px;
-    margin: 10px;
-    width: 90%;
-    height: 100%;
+    margin: 20px;
+    width: 45%;
+    height: max-content;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: inline-block;
     color: white;
-    position: absolute;
+    box-sizing: border-box;
 
+}
+
+.education-container:hover,
+.volunteer-container:hover,
+.project-container:hover{
+    transition: 0.5s;
+    background-color: rgba(20, 24, 87, 0.619);
+    border: 2px solid rgba(255, 255, 255, 0.509);
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+    transform:
+        perspective(55em) rotateY(-10deg);
+}
+
+.education-content {
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.volunteer-content {
+    padding: 10px;
+    margin: 10px;
+    width: 90vw;
+    display: flex;
+
+   flex-direction: row;
+   flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.volunteer-container {
+    padding: 10px;
+    margin: 20px;
+    width: 400px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    box-sizing: border-box;
+}
+
+.project-content {
+    padding: 10px;
+    margin: 10px;
+    width: 90vw;
+    display: flex;
+
+    overflow: scroll;
+   flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.project-container {
+    padding: 10px;
+    margin: 20px;
+    width: 400px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    box-sizing: border-box;
+}
+
+.experience-content {
+    padding: 10px;
+    margin: 20px;
+    width: 95%;
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1000px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
 }
