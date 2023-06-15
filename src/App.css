@@ -48,14 +48,14 @@
 .welcome {
     padding: 20px;
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 10%;
 }
 
 .welcome-2 {
     padding: 20px;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 10%;
 }
 
@@ -75,7 +75,7 @@
     width: 100%;
 }
 
-.container {
+.app-container {
     width: 60%;
     color: white;
 
@@ -132,8 +132,6 @@
 .sphere {
     width: 180px;
     position: absolute;
-    float: bottom;
-    top: 170%;
     left: 5%;
     padding: 5px;
     overflow: hidden;
@@ -192,6 +190,7 @@
     position: static;
     display: inline-block;
     padding: 20px;
+    padding-bottom: 30px;
     background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
     background-size: 600% 100%;
     animation: gradient 8s linear infinite;
@@ -288,7 +287,7 @@
 
     .pfp {
         width: 200px;
-        top: 10%;
+        top: 15%;
         left: 40%;
         align-items: center;
     }
@@ -307,7 +306,7 @@
     .welcome {
         padding: 20px;
         position: absolute;
-        top: 32%;
+        top: 36%;
         left: 10%;
         font-size: 1.5rem;
         align-self: center;
@@ -316,7 +315,7 @@
     .welcome-2 {
         padding: 20px;
         position: absolute;
-        top: 38%;
+        top: 42%;
         align-self: center;
         font-size: 1.2rem;
     }
@@ -334,22 +333,34 @@
     }
     .sphere{
         width: 130px;
-        right: 0px;
-        top: 195vh;
+        left: 20px;
     }
     .sphere-2{
         width: 130px;
         right: 0px;
-        top: 125vh;
     }
     .astro-4{
         width: 130px;
         right: 5px;
-        top: 195vh;
     }
     .astro-3{
         width: 150px;
         left: 40px;
-        top: 360vh;
     }
+
+    .astro-2{
+        width: 150px;
+        right: 5px;
+    }
+
+    .spring{
+        width: 130px;
+        left: 10%;
+    }
+
+    .diamond{
+        width: 100px;
+        right: 5%;
+    }
+
 }

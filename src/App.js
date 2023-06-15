@@ -86,7 +86,7 @@ function App() {
 
       <header className="app-header">
 
-        <div className="container">
+        <div className="app-container">
           <h1 className='welcome'>Hi there! I'm Khushi Panwar</h1>
           <h2 className='welcome-2'>
 
@@ -136,7 +136,6 @@ function App() {
       </section>
 
       <section className="education" id="education">
-        <img src="media/sphere.png" className="sphere" />
         <img src="media/sphere.png" className="sphere-2" />
         <center>
           <h2 className='section-heading'>Education</h2>
@@ -147,6 +146,8 @@ function App() {
       </section>
 
       <section className="experience" id="experience">
+
+        <img src="media/sphere.png" className="sphere" />
         <img src="media/astro4.png" className="astro-4" />
 
         <center>
@@ -155,10 +156,12 @@ function App() {
             {experience}
           </div>
         </center>
+
+        <img src="media/chain.png" className="diamond" />
+        <img src="media/astro3.png" className="astro-3" />
       </section>
 
       <section className="volunteering" id="volunteer">
-        <img src="media/astro3.png" className="astro-3" />
 
         <center>
           <h2 className='section-heading'>Volunteering</h2>
@@ -180,16 +183,67 @@ function App() {
         </center>
 
         <img src="media/spring.png" className="spring" />
-        
+
         <img src="media/diamond.png" className="diamond" />
       </section>
 
       <section className="contact" id="contact">
         <center>
           <h2 className='section-heading'>Contact Me</h2>
-          <div className="volunteer-content">
-
+          <div class="container">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <div class="icon">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <h3>
+                    <a href="https://www.linkedin.com/in/smilewithkhushi/" target="_blank">smilewithkhushi</a>
+                  </h3>
+                  <p>This is where I network and build my professional protfolio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <div class="icon">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <h3>
+                    <a href="https://twitter.com/smilewithkhushi" target="_blank">@SmileWithKhushi</a>
+                  </h3>
+                  <p>This is where I post random tweets about tech & life</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <div class="icon">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <h3>
+                    <a href="https://github.com/smilewithkhushi" target="_blank">@SmileWithKhushi</a>
+                  </h3>
+                  <p>This is where I share code and work on projects.</p>
+                </div>
+              </div>
+            </div>
           </div>
+
         </center>
       </section>
 
