@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: "poppins";
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+  }
 
 
 .app {
@@ -46,6 +49,7 @@
 }
 
 .welcome {
+    width: max-content;
     padding: 20px;
     position: absolute;
     top: 20%;
@@ -53,6 +57,7 @@
 }
 
 .welcome-2 {
+    width: max-content;
     padding: 20px;
     position: absolute;
     top: 30%;
@@ -108,7 +113,6 @@
 .astro1 {
     width: 120px;
     position: absolute;
-    top: 50%;
     left: 40%;
     overflow: hidden;
     margin: 5px;
@@ -186,7 +190,8 @@
 .about {
     position: static;
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 20px;
     padding-bottom: 30px;
     background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
     background-size: 600% 100%;
@@ -208,6 +213,7 @@
 .about-text {
     color: white;
     width: 80%;
+    text-align: justify;
     padding-bottom: 15px;
 }
 
@@ -285,7 +291,7 @@
     width: 100%;
 }
     .pfp {
-        width: 200px;
+        width: 180px;
         top: 15%;
         left: 35%;
         float: center;
@@ -305,7 +311,7 @@
     .welcome {
         padding: 20px;
         position: absolute;
-        top: 36%;
+        top: 38%;
         left: 10%;
         font-size: 1.5rem;
         align-self: center;
@@ -314,7 +320,7 @@
     .welcome-2 {
         padding: 20px;
         position: absolute;
-        top: 42%;
+        top: 45%;
         align-self: center;
         font-size: 1.2rem;
     }
@@ -322,42 +328,35 @@
     .clouds, .clouds-2{
         width: 130px;
         right: 0px;
-        top: 60%;
     }
 
     .astro1{
         width: 100px;
-        top: 55%;
     }
     .sphere{
         width: 100px;
-        left: 20px;
+        left: 10px;
     }
     .sphere-2{
-        width: 100px;
-        right: 0px;
+        width: 80px;
+        margin-bottom:20px;
     }
     .astro-4{
         width: 100px;
-        right: 3px;
     }
     .astro-3{
         width: 100px;
-        left: 10px;
     }
 
     .astro-2{
         width: 120px;
-        right: 2px;
     }
 
     .spring{
-        width: 100px;
-        left: 10px;
+        width: 80px;
     }
 
     .diamond{
         width: 80px;
-        right: 5px;
     }
 }

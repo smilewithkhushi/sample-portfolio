@@ -1,11 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 @font-face {
     font-family: "poppins";
     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
   }
 
-  h1,h2,h3,h4,h5{
+  h1, h2{
+    font-family: 'Poppins', sans-serif;
+  }
+  h2,h3,h4,h5{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+
 
 .education-container {
     padding: 10px;
@@ -51,10 +58,11 @@
 .volunteer-content {
     padding: 10px;
     margin: 10px;
-    width: 95vw;
+    width: 90%;
     display: flex;
    flex-direction: row;
    flex-wrap: wrap;
+   align-items: center;
     justify-content: center;
     color: white;
     box-sizing: border-box;
@@ -178,7 +186,10 @@
         flex-wrap: wrap;
     }
     .volunteer-container{
-        width: 80%;
+        width: 85%;
+    }
+    .volunteer-content{
+        width: 90%;
     }
 }
 
