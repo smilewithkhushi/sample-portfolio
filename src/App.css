@@ -191,7 +191,6 @@
     position: static;
     display: inline-block;
     padding: 10px;
-    margin-top: 20px;
     padding-bottom: 30px;
     background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
     background-size: 600% 100%;
@@ -292,7 +291,7 @@
 }
     .pfp {
         width: 180px;
-        top: 15%;
+        top: 20%;
         left: 35%;
         float: center;
     }
@@ -311,7 +310,7 @@
     .welcome {
         padding: 20px;
         position: absolute;
-        top: 38%;
+        top: 40%;
         left: 10%;
         font-size: 1.5rem;
         align-self: center;
@@ -320,7 +319,7 @@
     .welcome-2 {
         padding: 20px;
         position: absolute;
-        top: 45%;
+        top: 48%;
         align-self: center;
         font-size: 1.2rem;
     }
@@ -332,31 +331,38 @@
 
     .astro1{
         width: 100px;
+        top: 60%;
     }
     .sphere{
-        width: 100px;
-        left: 10px;
+        width: 80px;
+        left: 5px;
     }
     .sphere-2{
         width: 80px;
         margin-bottom:20px;
+        right: 5px;
     }
     .astro-4{
         width: 100px;
+        right: 2px;
     }
     .astro-3{
         width: 100px;
+        left: 2px;
     }
 
     .astro-2{
         width: 120px;
+        right: 2px;
     }
 
     .spring{
         width: 80px;
+        left: 2px;
     }
 
     .diamond{
         width: 80px;
+        right: 2px;
     }
 }
