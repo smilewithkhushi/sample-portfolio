@@ -18,9 +18,10 @@
     overflow: hidden;
     position:fixed;
     width: 100%;
-    background-color: rgba(13, 0, 70, 0.852);
+    background-color: rgba(13, 0, 70, 1);
     padding-right: 30px;
     margin-bottom: 20px;
+    z-index: 1;
 }
 .app-navbar a{
     color: white;
@@ -36,6 +37,7 @@
     background-color: rgba(2, 0, 14, 0.852);
     color: rgb(255, 255, 255);
     font-weight: bolder;
+    box-shadow: 0px 3px 0px rgba(255, 255, 255, 0.4);
 }
 
 .app-header {
@@ -96,10 +98,9 @@
 }
 
 .clouds {
-    width: 180px;
+    width: 150px;
     position: absolute;
-    left: 5%;
-    padding: 5px;
+    left: 5px;
     overflow: hidden;
     margin: 5px;
     transform: translatey(0px);
@@ -107,11 +108,10 @@
 }
 
 .astro1 {
-    width: 180px;
+    width: 120px;
     position: absolute;
     top: 50%;
-    left: 45%;
-    padding: 5px;
+    left: 40%;
     overflow: hidden;
     margin: 5px;
     transform: translatey(0px);
@@ -119,10 +119,9 @@
 }
 
 .clouds-2 {
-    width: 180px;
+    width: 150px;
     position: absolute;
-    right: 3%;
-    padding: 5px;
+    right: 3px;
     margin: 5px;
     overflow: hidden;
     transform: translatey(0px);
@@ -130,7 +129,7 @@
 }
 
 .sphere {
-    width: 180px;
+    width: 160px;
     position: absolute;
     left: 5%;
     padding: 5px;
@@ -226,7 +225,7 @@
 }
 
 .astro-4 {
-    width: 190px;
+    width: 160px;
     position: absolute;
     right: 20%;
     padding: 5px;
@@ -237,7 +236,7 @@
 }
 
 .astro-3 {
-    width: 180px;
+    width: 160px;
     position: absolute;
     left: 20%;
     padding: 5px;
@@ -247,7 +246,7 @@
 }
 
 .astro-2 {
-    width: 200px;
+    width: 180px;
     position: absolute;
     right: 20%;
     transform: translatey(0px);
@@ -275,7 +274,6 @@
 
 @media screen and (max-width: 1000px) {
 .app-navbar a{
-    
     color: white;
     float: center;
     padding: 10px 14px;
@@ -285,11 +283,14 @@
     font-family: monospace;
 }
 
+.app-navbar{
+    width: 100%;
+}
     .pfp {
         width: 200px;
         top: 15%;
-        left: 40%;
-        align-items: center;
+        left: 35%;
+        float: center;
     }
 
     #video {
@@ -327,40 +328,38 @@
     }
 
     .astro1{
-        width: 130px;
-        right: 0px;
+        width: 100px;
         top: 55%;
     }
     .sphere{
-        width: 130px;
+        width: 100px;
         left: 20px;
     }
     .sphere-2{
-        width: 130px;
+        width: 100px;
         right: 0px;
     }
     .astro-4{
-        width: 130px;
-        right: 5px;
+        width: 100px;
+        right: 3px;
     }
     .astro-3{
-        width: 150px;
-        left: 40px;
+        width: 100px;
+        left: 10px;
     }
 
     .astro-2{
-        width: 150px;
-        right: 5px;
+        width: 120px;
+        right: 2px;
     }
 
     .spring{
-        width: 130px;
-        left: 10%;
+        width: 100px;
+        left: 10px;
     }
 
     .diamond{
-        width: 100px;
-        right: 5%;
+        width: 80px;
+        right: 5px;
     }
-
 }
