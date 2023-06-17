@@ -190,8 +190,8 @@
 .about {
     position: static;
     display: inline-block;
-    padding: 10px;
-    padding-bottom: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
     background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
     background-size: 600% 100%;
     animation: gradient 8s linear infinite;
@@ -211,7 +211,7 @@
 
 .about-text {
     color: white;
-    width: 80%;
+    width: 90%;
     text-align: justify;
     padding-bottom: 15px;
 }
@@ -282,7 +282,7 @@
     padding: 10px 14px;
     text-decoration: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 13px;
     font-family: monospace;
 }
 
