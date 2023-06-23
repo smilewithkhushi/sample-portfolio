@@ -3,7 +3,9 @@
     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
   }
 
-
+.App{
+    overflow:hidden;
+}
 .app {
     text-align: center;
     min-height: 100vh;
@@ -12,6 +14,7 @@
     align-items: center;
     justify-content: center;
     color: white;
+    background-color: black;
   scroll-behavior: smooth;
 }
 
@@ -22,7 +25,7 @@
     background-color: rgba(13, 0, 70, 1);
     padding-right: 30px;
     margin-bottom: 20px;
-    z-index: 1;
+    z-index: 100;
 }
 .app-navbar a{
     color: white;

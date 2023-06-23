@@ -190,17 +190,17 @@ function App() {
       <section className="contact" id="contact">
         <center>
           <h2 className='section-heading'>Contact Me</h2>
-          <div class="container">
-            <div class="card">
-              <div class="face face1">
-                <div class="content">
-                  <div class="icon">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <div className="container">
+            <div className="card">
+              <div className="face face1">
+                <div className="content">
+                  <div className="icon">
+                    <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
-              <div class="face face2">
-                <div class="content">
+              <div className="face face2">
+                <div className="content">
                   <h3>
                     <a href="https://www.linkedin.com/in/smilewithkhushi/" target="_blank">smilewithkhushi</a>
                   </h3>
@@ -208,16 +208,16 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="face face1">
-                <div class="content">
-                  <div class="icon">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <div className="card">
+              <div className="face face1">
+                <div className="content">
+                  <div className="icon">
+                    <i className="fa fa-twitter-square" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
-              <div class="face face2">
-                <div class="content">
+              <div className="face face2">
+                <div className="content">
                   <h3>
                     <a href="https://twitter.com/smilewithkhushi" target="_blank">@SmileWithKhushi</a>
                   </h3>
@@ -225,16 +225,16 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="face face1">
-                <div class="content">
-                  <div class="icon">
-                    <i class="fa fa-github-square" aria-hidden="true"></i>
+            <div className="card">
+              <div className="face face1">
+                <div className="content">
+                  <div className="icon">
+                    <i className="fa fa-github-square" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
-              <div class="face face2">
-                <div class="content">
+              <div className="face face2">
+                <div className="content">
                   <h3>
                     <a href="https://github.com/smilewithkhushi" target="_blank">@SmileWithKhushi</a>
                   </h3>
