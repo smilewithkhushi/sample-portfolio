@@ -13,136 +13,67 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
-
-.education-container {
-    padding: 10px;
-    margin: 20px;
-    width: 50%;
-    height: max-content;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    display: inline-block;
-    color: white;
-    box-sizing: border-box;
-
-}
-
 .education-container:hover,
 .volunteer-container:hover,
 .project-container:hover,
-.experience-container:hover{
+.experience-container:hover,
+.certification-container:hover{
     transition: 0.5s;
     background-color: rgba(20, 24, 87, 0.619);
     border: 2px solid rgba(255, 255, 255, 0.509);
     color: white;
     cursor: pointer;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.811) -6px -2px 12px 0px;
 
     transform:
-        perspective(55em) rotateY(-10deg);
+        perspective(55em) rotateY(-5deg);
 }
 
-.education-content {
-    padding: 10px;
+
+.project-content, .experience-content, .education-content, .volunteer-content, .certification-content {
+    overflow: auto;
+    padding: 20px;
     margin: 10px;
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 75%;
+    display: flex;    
+   scroll-snap-type: x mandatory;
+   scrollbar-arrow-color: aliceblue;
     color: white;
-    box-sizing: border-box;
 }
 
-.volunteer-content {
-    padding: 10px;
-    margin: 10px;
-    width: 90%;
-    display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-items: center;
-    justify-content: center;
-    color: white;
-    box-sizing: border-box;
-}
-
-.volunteer-container {
-    padding: 10px;
+.project-container, .experience-container, .education-container, .volunteer-container, .certification-container {
+    padding: 20px;
     margin: 20px;
     width: 400px;
     height: max-content;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+    display: inline-block;
+    flex-shrink: 0;
+    scroll-snap-align: start;
     box-sizing: border-box;
 }
 
-.experience-container {
-    padding: 10px;
-    margin: 15px;
-    width: 300px;
-    height: max-content;
+.project-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.project-container a:hover{
+    color: rgb(93, 204, 244);
+    text-decoration: underline;
+}
+
+.mainPic{
+    width: 95%;
+    object-fit: cover;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    margin: 5px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    box-sizing: border-box;
 }
 
-.project-content {
-    padding: 10px;
-    margin: 10px;
-    width: 90vw;
-    display: flex;
-    overflow: scroll;
-   flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    color: white;
-    box-sizing: border-box;
-}
-
-.project-container {
-    padding: 10px;
-    margin: 20px;
-    width: 400px;
-    height: max-content;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    box-sizing: border-box;
-}
-
-.experience-content {
-    margin: 20px;
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    box-sizing: border-box;
-}
-
-
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     h1{
         font-size: 1.4rem;
     }
@@ -156,17 +87,17 @@
         font-size: 0.8rem;
     }
 
-    .education-container{
-        width: 80%;
-    }
-    .education-content{
-        flex-wrap: wrap;
-    }
-    .experience-container{
-        width: 80%;
-    }
-    .experience-content{
+    .education-container,.project-container, .experience-container, .volunteer-container{
         width: 90%;
+        padding: 20px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+    .education-content, .project-content, .experience-content, .volunteer-content{
+        width: 80%;
+        overflow: auto;
+        display: flex;
+        scroll-snap-type: x mandatory;
     }
     .container {
         width: 80%;
@@ -177,20 +108,7 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    .project-container{
-        width: 80%;
-        height: max-content;
-    }
-    .project-content{
-        width: 90%;
-        flex-wrap: wrap;
-    }
-    .volunteer-container{
-        width: 85%;
-    }
-    .volunteer-content{
-        width: 90%;
-    }
+
 }
 
 

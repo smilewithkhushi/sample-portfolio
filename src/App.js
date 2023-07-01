@@ -3,7 +3,7 @@ import './App.css';
 import './userdata.css';
 import React from 'react';
 import projectsList from './projectData';
-
+import { Link } from "react-scroll"
 import volunteeringList from './volunteeringData';
 import VolunteeringListDisplay from './volunteeringDataDisplay';
 
@@ -13,6 +13,9 @@ import TypeWriterEffect from 'react-typewriter-effect';
 import experienceList from './experienceData';
 import ExperienceListDisplay from './ExperienceDataDisplay';
 import ProjectListDisplay from './ProjectDataDisplay';
+import certificationData from './certificationData';
+import CertificationListDisplay from './certificateDataDisplay';
+import ImageGallery from './imagegallery';
 
 
 function App() {
@@ -38,18 +41,31 @@ function App() {
         organization={expItem.organization}
         tenure={expItem.tenure}
         desc={expItem.desc}
+        image={expItem.image}
       />
     )
   })
 
   const volunteering = volunteeringList.map((volItem) => {
-    console.log("Eduitem value = " + { volItem });
     return (
       <VolunteeringListDisplay
         key={volItem.id}
         name={volItem.name}
         position={volItem.position}
         description={volItem.description}
+        image={volItem.image}
+      />
+    )
+  })
+
+  const certification = certificationData.map((certItem) => {
+    return (
+      <CertificationListDisplay
+        key={certItem.id}
+        name={certItem.name}
+        organization={certItem.organization}
+        date={certItem.date}
+        image={certItem.image}
       />
     )
   })
@@ -63,6 +79,7 @@ function App() {
         description={item.description}
         tech={item.tech}
         github={item.github}
+        image={item.image}
       />
     )
   })
@@ -76,12 +93,75 @@ function App() {
 
       <div className='app-navbar'>
 
-        <a href="#contact">Contact</a>
-        <a href="#projects">Projects</a>
-        <a href="#volunteer">Volunteering</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#about">About</a>
+
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >Contact</Link>
+
+        <Link
+          activeClass="active"
+          to="certifications"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >Certifications</Link>
+
+
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >Projects</Link>
+
+
+        <Link
+          activeClass="active"
+          to="volunteering"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >Volunteering</Link>
+
+
+        <Link
+          activeClass="active"
+          to="experience"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >Experience</Link>
+
+
+        <Link
+          activeClass="active"
+          to="education"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >Education</Link>
+
+
+        <Link
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >About</Link>
+
       </div>
 
       <header className="app-header">
@@ -114,26 +194,28 @@ function App() {
           <img src="media/pfp.png" alt="Khushi Panwar" className="pfp" />
         </div>
       </header>
+      <br /><br />
 
       <section className="about" id="about">
         <img src="media/clouds.png" className="clouds" />
         <img src="media/clouds-2.png" className="clouds-2" />
-        <img src="media/astro1.png" className="astro1" />
         <center>
-
           <h2 className='section-heading'>About Me</h2>
-          <div className="about-text">
-            I'm a third year undergrad pursuing B.Sc (Hons) in Computer Science from Shaheed Rajguru College of Applied Sciences for Women, University of Delhi.
-            <br></br>
-            I'm a tech enthusiast passionate about learning latest technologies  and to encourage people to dive into the world of innovations.
-            I'm skilled with Front End Website & App Development, Data science '(intermediate)' & Cloud Platforms such as GCP, Azure and AWS.
-            <br></br>
-            I'm a Full Stack Learner, Mentor, Community Builder and a YouTuber. I'm also an Alpha Microsoft Learn Student Ambassador. Being in community, I've organized various events and hackathons. I always look forward to utilize my skills and gain new learning experiences.
+            <div className="about-text">
+              I'm a third year undergrad pursuing B.Sc (Hons) in Computer Science from Shaheed Rajguru College of Applied Sciences for Women, University of Delhi.
+              <br></br>
+              I'm a tech enthusiast passionate about learning latest technologies  and to encourage people to dive into the world of innovations.
+              I'm skilled with Front End Website & App Development, Data science '(intermediate)' & Cloud Platforms such as GCP, Azure and AWS.
+              <br></br>
+              I'm a Full Stack Learner, Mentor, Community Builder and a YouTuber. I'm also an Alpha Microsoft Learn Student Ambassador. Being in community, I've organized various events and hackathons. I always look forward to utilize my skills and gain new learning experiences.
 
-          </div>
-
+            </div>
         </center>
+        <br />
+        <br />
       </section>
+
+      <br />
 
       <section className="education" id="education">
         <img src="media/sphere.png" className="sphere-2" />
@@ -143,7 +225,9 @@ function App() {
             {education}
           </div>
         </center>
+        <br /><br />
       </section>
+      <br />
 
       <section className="experience" id="experience">
 
@@ -159,7 +243,9 @@ function App() {
 
         <img src="media/chain.png" className="diamond" />
         <img src="media/astro3.png" className="astro-3" />
-      </section>
+        <br /><br /> </section>
+      <br />
+
 
       <section className="volunteering" id="volunteer">
 
@@ -169,7 +255,10 @@ function App() {
             {volunteering}
           </div>
         </center>
+        <br /><br />
       </section>
+
+      <br />
 
       <section className="experience" id="projects">
         <img src="media/astro2.png" className="astro-2" />
@@ -185,10 +274,22 @@ function App() {
         <img src="media/spring.png" className="spring" />
 
         <img src="media/diamond.png" className="diamond" />
-      </section>
+        <br /> <br /><br /></section>
+      <br />
 
-      <section className="contact" id="contact">
+      <section className="volunteering" id="certifications">
         <center>
+          <h2 className='section-heading'>Certifications</h2>
+          <div className="certification-content">
+            {certification}
+          </div>
+        </center>
+        <br /><br /> </section>
+      <br />
+      <section className="experience" id="contact">
+        <center>
+
+          <img src="media/astro1.png" className="astro1" />
           <h2 className='section-heading'>Contact Me</h2>
           <div class="container">
             <div class="card">
