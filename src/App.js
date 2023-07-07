@@ -143,14 +143,14 @@ function App() {
         >Experience</Link>
 
 
-        <Link
+        {/* <Link
           activeClass="active"
           to="education"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
-        >Education</Link>
+        >Education</Link> */}
 
 
         <Link
@@ -196,20 +196,20 @@ function App() {
       </header>
       <br /><br />
 
-      <section className="about" id="about">
+      <section id="about">
         <img src="media/clouds.png" className="clouds" />
         <img src="media/clouds-2.png" className="clouds-2" />
         <center>
           <h2 className='section-heading'>About Me</h2>
-            <div className="about-text">
-              I'm a third year undergrad pursuing B.Sc (Hons) in Computer Science from Shaheed Rajguru College of Applied Sciences for Women, University of Delhi.
-              <br></br>
-              I'm a tech enthusiast passionate about learning latest technologies  and to encourage people to dive into the world of innovations.
-              I'm skilled with Front End Website & App Development, Data science '(intermediate)' & Cloud Platforms such as GCP, Azure and AWS.
-              <br></br>
-              I'm a Full Stack Learner, Mentor, Community Builder and a YouTuber. I'm also an Alpha Microsoft Learn Student Ambassador. Being in community, I've organized various events and hackathons. I always look forward to utilize my skills and gain new learning experiences.
+          <div className="about-text">
+            I'm a third year undergrad pursuing B.Sc (Hons) in Computer Science from Shaheed Rajguru College of Applied Sciences for Women, University of Delhi.
+            <br></br>
+            I'm a tech enthusiast passionate about learning latest technologies  and to encourage people to dive into the world of innovations.
+            I'm skilled with Front End Website & App Development, Data science '(intermediate)' & Cloud Platforms such as GCP, Azure and AWS.
+            <br></br>
+            I'm a Full Stack Learner, Mentor, Community Builder and a YouTuber. I'm also an Alpha Microsoft Learn Student Ambassador. Being in community, I've organized various events and hackathons. I always look forward to utilize my skills and gain new learning experiences.
 
-            </div>
+          </div>
         </center>
         <br />
         <br />
@@ -217,8 +217,9 @@ function App() {
 
       <br />
 
+      {/* 
       <section className="education" id="education">
-        <img src="media/sphere.png" className="sphere-2" />
+        
         <center>
           <h2 className='section-heading'>Education</h2>
           <div className='education-content'>
@@ -227,7 +228,7 @@ function App() {
         </center>
         <br /><br />
       </section>
-      <br />
+      <br /> */}
 
       <section className="experience" id="experience">
 
@@ -285,65 +286,57 @@ function App() {
           </div>
         </center>
         <br /><br /> </section>
+
+      <img src="media/sphere.png" className="sphere-2" />
       <br />
       <section className="experience" id="contact">
         <center>
 
           <img src="media/astro1.png" className="astro1" />
           <h2 className='section-heading'>Contact Me</h2>
-          <div class="container">
-            <div class="card">
-              <div class="face face1">
-                <div class="content">
-                  <div class="icon">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="face face2">
-                <div class="content">
-                  <h3>
-                    <a href="https://www.linkedin.com/in/smilewithkhushi/" target="_blank">smilewithkhushi</a>
-                  </h3>
-                  <p>This is where I network and build my professional protfolio.</p>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="face face1">
-                <div class="content">
-                  <div class="icon">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="face face2">
-                <div class="content">
-                  <h3>
-                    <a href="https://twitter.com/smilewithkhushi" target="_blank">@SmileWithKhushi</a>
-                  </h3>
-                  <p>This is where I post random tweets about tech & life</p>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="face face1">
-                <div class="content">
-                  <div class="icon">
-                    <i class="fa fa-github-square" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="face face2">
-                <div class="content">
-                  <h3>
-                    <a href="https://github.com/smilewithkhushi" target="_blank">@SmileWithKhushi</a>
-                  </h3>
-                  <p>This is where I share code and work on projects.</p>
-                </div>
-              </div>
-            </div>
+          <br></br>
+          <div class="social-media">
+
+            <a href="#" class="social-icon">
+              <img src="gmail.png" alt="Gmail" />
+            </a>
+            <a href="https://www.linkedin.com/in/smilewithkhushi/" class="social-icon">
+              <img src="linkedin.png" alt="Linkedin" />
+            </a>
+
+            <a href="https://twitter.com/SmileWithKhushi" class="social-icon">
+              <img src="twitter.png" alt="Twitter" />
+            </a>
+           
+            <a href="https://www.github.com/smilewithkhushi/" class="social-icon">
+              <img src="github.png" alt="Github" />
+            </a>
+            <a href="https://www.instagram.com/smilewithkhushi/" class="social-icon">
+              <img src="instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.youtube.com/c/smilewithkhushi/" class="social-icon">
+              <img src="youtube.png" alt="YouTube" />
+            </a>
+            <a href="https://www.cloudskillsboost.google/public_profiles/de7185e5-7f32-4705-bf8e-55002a58d00e" class="social-icon">
+              <img src="cloudprofile.png" alt="Cloud Skill Boost profile" />
+            </a>
+            <a href="https://learn.microsoft.com/en-us/users/smilewithkhushi/" class="social-icon">
+              <img src="microsoft.png" alt="MS Learn Profile" />
+            </a>
+            <a href="https://smilewithkhushi.hashnode.dev/" class="social-icon">
+              <img src="hashnode.png" alt="Hashnode" />
+            </a>
+
+            <a href="https://g.dev/smilewithkhushi" class="social-icon">
+              <img src="google.png" alt="Google for Developers profile" />
+            </a>
+
+            <a href="
+            #" class="social-icon">
+              <img src="portfolio.png" alt="Portfolio" />
+            </a>
           </div>
+
 
         </center>
       </section>
