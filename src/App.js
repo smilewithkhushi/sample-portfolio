@@ -297,7 +297,7 @@ function App() {
           <br></br>
           <div class="social-media">
 
-            <a href="#" class="social-icon">
+            <a href="mailto:smilewithkhushiyt@gmail.com" class="social-icon">
               <img src="gmail.png" alt="Gmail" />
             </a>
             <a href="https://www.linkedin.com/in/smilewithkhushi/" class="social-icon">
@@ -331,8 +331,7 @@ function App() {
               <img src="google.png" alt="Google for Developers profile" />
             </a>
 
-            <a href="
-            #" class="social-icon">
+            <a href="https://portfolio-khushi-panwar.vercel.app/" class="social-icon">
               <img src="portfolio.png" alt="Portfolio" />
             </a>
           </div>
