@@ -2,6 +2,14 @@
 
 let volunteeringList = [
     {
+        id: 8,
+        name: "Google Developer Student Club, SRCASW",
+        position: "GDSC Lead (2023-24)",
+        date: "August 2023 - Ongoing",
+        description: "Selected as the Lead for GDSC SRCASW. It is a vibrant community of tech enthusiasts and leaders who aim to support a strong coding culture in their campus. They lead the clubs and conduct sessions to teach each other about Machine Learning, Android app development, Google Cloud, Flutter, and other exciting technologies. Clubs host events, guest speakers, and hackathons.",
+        image: "dsclead.PNG",
+    },
+    {
         id: 7,
         name: "Google Cloud Arcade Facilitator Program",
         position: "Arcade Facilitator",
